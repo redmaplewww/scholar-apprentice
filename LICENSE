@@ -1,0 +1,178 @@
+版权所有 (c) 2026 redmaplewww。保留所有权利。
+Copyright (c) 2026 redmaplewww. All Rights Reserved.
+
+本许可为专有许可（Proprietary License），不是开源许可。
+This is a proprietary license. It is NOT an open-source license.
+
+以中文版本为准；英文版本仅为便于阅读。
+The Chinese version prevails; the English version is provided for convenience only.
+
+────────────────────────────────────────────────────────────
+一、权利的保留
+────────────────────────────────────────────────────────────
+
+1.1 本仓库（以下简称"本作品"）包含的全部内容——源代码、脚本、提示词、协议文档、
+    领域包、数据库结构、图表、文字与其余一切材料——的著作权及其他一切知识产权，
+    均由权利人完整保留。
+
+1.2 除本许可明确授予的权利外，未授予任何明示或默示的权利。不授予任何专利许可、
+    商标许可或商业秘密许可。
+
+────────────────────────────────────────────────────────────
+二、禁止的行为
+────────────────────────────────────────────────────────────
+
+未经权利人事先书面许可，任何人不得实施下列行为：
+
+2.1 复制、下载后留存副本、镜像、转载、重新发布本作品的任何部分；
+
+2.2 修改、改编、翻译、演绎，或基于本作品创作衍生作品；
+
+2.3 以任何形式分发、传播、出租、出借、出售、转让、再许可本作品或其任何部分；
+
+2.4 将本作品或其任何部分用于商业目的，包括但不限于：商业产品、商业服务、
+    付费培训、咨询交付、SaaS 或 API 服务、内部商业流程；
+
+2.5 将本作品或其任何部分用于训练、微调、蒸馏、评测机器学习模型或人工智能系统，
+    或将本作品的内容纳入任何训练数据集；
+
+2.6 移除、遮蔽或篡改本作品中的著作权声明、许可声明或作者标识；
+
+2.7 使用本作品的名称、作者署名或标识暗示获得授权、背书或合作关系。
+
+────────────────────────────────────────────────────────────
+三、唯一被允许的行为
+────────────────────────────────────────────────────────────
+
+3.1 在托管平台（如 GitHub）的条款允许范围内，通过平台界面在线浏览本作品的内容。
+
+3.2 依据《中华人民共和国著作权法》规定的合理使用（如为个人学习、研究而适当引用，
+    且注明出处），在法定范围内使用。
+
+    上述浏览与合理使用，均不构成对本作品任何其他权利的授予。
+
+────────────────────────────────────────────────────────────
+四、平台条款的例外
+────────────────────────────────────────────────────────────
+
+4.1 本作品托管于第三方平台时，该平台的服务条款可能允许平台内用户在本平台范围内
+    创建 fork 或副本。该等行为仅受平台条款约束，不构成本许可对该行为的授权，
+    且该等副本同样受本许可约束。
+
+4.2 如需完全禁止他人创建副本或 fork，应将本作品置于私有仓库。
+
+────────────────────────────────────────────────────────────
+五、贡献
+────────────────────────────────────────────────────────────
+
+5.1 除另有书面约定外，任何向本作品提交的贡献（commit、patch、pull request、
+    issue 中的代码或文字）均视为由提交者无偿、永久、不可撤销地授权权利人
+    以任何方式使用、修改、许可与再许可，且不附带任何条件。
+
+5.2 提交者保证其提交内容不侵犯第三方权利。
+
+────────────────────────────────────────────────────────────
+六、免责声明
+────────────────────────────────────────────────────────────
+
+6.1 本作品按"现状"提供，不附带任何明示或默示的保证，包括但不限于对适销性、
+    特定用途适用性、权利完整性、不侵权的保证。
+
+6.2 本作品涉及学术研究流程与计算工具，其输出不构成任何科学结论、工程建议、
+    法律意见或投资建议。使用者应自行验证一切结果。
+
+6.3 在任何情况下，权利人不对因使用或无法使用本作品而产生的任何直接、间接、
+    偶然、特殊、惩罚性或后果性损害承担责任，包括但不限于数据损失、研究延误、
+    发表损失、商誉损失，无论是否已被告知该等损害的可能性。
+
+────────────────────────────────────────────────────────────
+七、终止
+────────────────────────────────────────────────────────────
+
+7.1 任何违反本许可的行为，自动且立即终止本许可授予的全部权利，无需另行通知。
+
+7.2 许可终止后，行为人应立即停止一切使用，并销毁其持有的一切副本。
+
+7.3 权利人保留追究法律责任、要求停止侵害与赔偿损失的全部权利。
+
+────────────────────────────────────────────────────────────
+八、适用法律与争议解决
+────────────────────────────────────────────────────────────
+
+8.1 本许可适用中华人民共和国法律（不含港澳台地区法律）。
+
+8.2 因本许可产生的争议，由权利人住所地有管辖权的人民法院管辖。
+
+────────────────────────────────────────────────────────────
+九、许可的变更
+────────────────────────────────────────────────────────────
+
+9.1 权利人可随时修订本许可。修订仅对修订之后发布或使用的版本生效。
+
+9.2 已按旧版许可合法取得授权的使用行为，不受修订影响；但本许可未授予的
+    权利，不因修订而溯及取得。
+
+────────────────────────────────────────────────────────────
+如需授权，请联系权利人取得书面许可。
+For licensing inquiries, contact the copyright holder in writing.
+────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────
+ENGLISH VERSION (for convenience only; the Chinese version prevails)
+────────────────────────────────────────────────────────────
+
+Copyright (c) 2026 redmaplewww. All Rights Reserved.
+
+This is a proprietary license, not an open-source license. All copyright and
+other intellectual property rights in this repository (source code, scripts,
+prompts, protocol documents, domain packs, database schemas, figures and all
+other materials) are fully reserved by the copyright holder. No rights are
+granted except those expressly stated below. No patent, trademark or trade
+secret license is granted.
+
+Without prior written permission, no person may: (a) copy, retain, mirror or
+republish any part of this work; (b) modify, adapt, translate or create
+derivative works; (c) distribute, transmit, rent, sell, transfer or sublicense
+any part of this work; (d) use any part of this work for commercial purposes,
+including commercial products, paid training, consulting deliverables, SaaS or
+API services, or internal commercial processes; (e) use any part of this work
+to train, fine-tune, distill or evaluate machine-learning or AI systems, or
+include it in any training dataset; (f) remove or alter any copyright or
+license notice; (g) imply authorization, endorsement or partnership.
+
+Permitted: viewing the content through a hosting platform's interface, to the
+extent the platform's terms allow; and uses permitted as statutory fair use
+under applicable law (e.g. quotation for personal study with attribution).
+Such viewing and fair use grant no other rights.
+
+Where this work is hosted on a third-party platform, that platform's terms may
+allow in-platform forks; such acts are governed solely by those terms, are not
+authorized by this license, and any resulting copy remains subject to this
+license. To prohibit copying or forking entirely, keep this work in a private
+repository.
+
+Unless otherwise agreed in writing, any contribution submitted to this work is
+deemed gratuitously, permanently and irrevocably licensed to the copyright
+holder, without conditions, and the contributor warrants it does not infringe
+third-party rights.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+NON-INFRINGEMENT. Outputs of this work do not constitute scientific
+conclusions, engineering advice, legal advice or investment advice. IN NO EVENT
+SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING LOST DATA, RESEARCH
+DELAY, LOST PUBLICATION OR LOST GOODWILL, WHETHER OR NOT ADVISED OF THE
+POSSIBILITY.
+
+Any breach automatically and immediately terminates all rights granted, without
+notice. The breaching party must cease all use and destroy all copies. The
+copyright holder reserves all rights to seek injunctive relief and damages.
+
+This license is governed by the laws of the People's Republic of China
+(excluding Hong Kong, Macao and Taiwan). Disputes are subject to the exclusive
+jurisdiction of the competent court at the copyright holder's domicile.
+
+The copyright holder may revise this license at any time; revisions apply only
+to versions published or used after the revision.
+────────────────────────────────────────────────────────────
