@@ -1,0 +1,53 @@
+# 领域包配置：核心流程读这个文件决定"这个领域允许什么"
+# 通用协议见 ../../SKILL.md 与 ../../references/stage-I-instrument-commissioning.md
+
+domain: fracture
+version: 0.1
+runtime_workspace: .
+background_doc: ""          # 可选：填你自己的领域调研文档路径（相对工作区）
+topic_cards: []             # 可选：选题卡路径列表
+
+instruments:
+  fracture-md-ktest-v1:
+    kind: simulation
+    script_root: ""             # 可选：实验脚本目录
+    commission_card: domain-packs/fracture/commission-fracture-md-ktest-v1.md
+    status: partial
+
+# 领域约定：核心不写这些，换个领域就变
+conventions:
+  crack_frame: "x=propagation, y=crack-plane normal, z=crack front; y = z cross x"
+  miller: "4-index Miller-Bravais -> 3-index (U=u-t, V=v-t, W=w), reduced by gcd"
+  units: "metal (A, eV); K in GPa*sqrt(A); report in MPa*sqrt(m)"
+  stress_sign: "LAMMPS pxx -> tensile positive"
+  path_policy: "potentials mirrored to ASCII dir; LAMMPS cannot open non-ASCII paths"
+
+# 已知答案题库：核心只要求"有"，具体数值在这里
+known_answer_battery:
+  tier1_constants: ""         # 可选：一级常数的结果目录
+  tier2_selfconsistency: "K-field round-trip <= 1 percent"
+  tier3_reproduction:
+    - "Andric & Curtin 2017 (fcc oblique-plane emission vs Rice)"
+    - "Wu & Curtin 2015 (Mg basal/prism brittle, pyramid-I ductile)"
+    - "Chang 2022 (Ti mechanism flips with potential)"
+  tolerances:
+    constants: 0.02
+    gamma_s: 0.15
+    K_quantitative: 0.15
+
+# 事件定义与判读：领域强相关，一律改在这里，不在核心层改
+events:
+  cleavage: "layers adjacent to crack plane separated by >1.5x reference spacing, contiguous with pre-crack"
+  emission: "DXA total line length increases by >1 A near tip"
+  twin_hcp: "PTM hcp atoms with local c-axis deviating >25 deg from parent"
+  known_issue: "D-02 emission threshold too sensitive; tune here only"
+
+case_matrix:
+  orientations: [basal_f1-210, prism_f0001, pyrI_f1-210]
+  missing: [prism_front_10-10, three_dimensional_check]
+
+red_lines:
+  - "mechanism claims need >=2 independent potentials agreeing in direction, else weak hypothesis at most"
+  - "every result card carries strain-rate/temperature conditions and potential dependence"
+  - "CCT geometry is qualitative only (Andric & Curtin 2019)"
+  - "hydrogen systems: timestep <= 0.5 fs"

@@ -1,0 +1,47 @@
+# WENO 领域骨架的"用户假设"——只用于 C6 对照与 Q1 盲归纳找回，不参与归纳本身。
+# 归纳时不得把本文件喂给抽取或聚类环节。
+domain: weno
+note: |
+  这是用户给出的先验分解（色散耗散 / 重构模板 / 重构权重 / 光滑指示器）。
+  盲归纳跑完后用 `eval --hypothesis` 对照，看哪些被找回、哪些漏了、AI 多找到了什么。
+axes:
+  - name: 线性格式谱特性（色散与耗散）
+    definition: 最优线性权重的色散、耗散误差与波数分辨率
+    targets:
+      - dispersion and dissipation of the linear scheme
+      - modified wavenumber behaviour of reconstruction
+      - spectral resolution of the optimal linear weights
+  - name: 候选模板
+    definition: 子模板的数量、宽度、偏置与选取方式
+    targets:
+      - candidate stencil selection
+      - stencil width and bias configuration
+      - compact stencil arrangement for reconstruction
+  - name: 非线性权重
+    definition: 光滑区逼近最优线性权重、间断附近压制跨间断模板
+    targets:
+      - nonlinear weights near critical points
+      - nonlinear weights approach optimal linear weights in smooth regions
+      - nonlinear weighting strategy reducing dissipation near discontinuities
+  - name: 光滑指示器
+    definition: 度量候选模板局部光滑度，并在临界点不误判
+    targets:
+      - smoothness indicator definition for candidate stencil
+      - smoothness indicator detecting discontinuities
+      - refined smoothness indicator at critical points
+outside_axes:
+  - 时间推进与时间离散误差
+  - 通量分裂与特征投影
+  - 正性保持 limiter
+  - 边界闭合
+  - 非结构网格
+  - 实现效率与内存访问
+paradigms:
+  - 神经网络直接替代重构
+  - 熵稳定格式
+  - DG / 谱元框架
+red_lines_seed:
+  - 宣称空间精度阶时必须排除时间离散误差
+  - 新权重必须做临界点收敛测试
+  - 必须报告 epsilon 与 p 的取值
+  - 标量平流结果不得直接外推到 Euler 方程

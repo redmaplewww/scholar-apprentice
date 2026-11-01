@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+db/
+vault/
+*.db
+*.db-wal
+*.db-shm
+snapshots/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,53 @@
+# 断裂领域的"用户假设"——只用于 C6 对照与 Q1，不参与归纳本身。
+domain: fracture
+note: |
+  由 03-领域调研 归纳的六轴。与 weno 的假设不同，这里的轴是 AI 依据调研文档提出的，
+  用户尚未逐条确认；盲归纳跑完后应重点看 missed 与 extra。
+axes:
+  - name: 相互作用模型
+    definition: 势函数对断裂关键量（γ_s、γ_us、牵引-分离曲线）的保真度
+    targets:
+      - interatomic potential fidelity for fracture properties
+      - EAM versus MEAM surface energy and unstable stacking energy
+      - traction separation curve range of the potential
+  - name: 几何与边界
+    definition: 让模拟结果代表本征韧性，而不是几何或边界的产物
+    targets:
+      - K-test with anisotropic LEFM displacement boundary
+      - central crack tension specimen size dependence
+      - flexible boundary condition image force
+  - name: 加载与时间尺度
+    definition: 跨越 MD 与实验之间的应变率鸿沟
+    targets:
+      - molecular statics versus molecular dynamics loading rate
+      - nudged elastic band dislocation emission barrier
+      - accelerated molecular dynamics rare event
+  - name: 理论判据
+    definition: 用材料常数预测临界应力强度因子
+    targets:
+      - Griffith cleavage criterion surface energy
+      - Rice dislocation emission criterion unstable stacking energy
+      - crack tip step correction to Rice criterion
+      - twin nucleation criterion at crack tip
+  - name: 机理判读
+    definition: 从轨迹中可靠地识别解理、发射、孪生与相变
+    targets:
+      - dislocation extraction analysis at crack tip
+      - common neighbour analysis structure identification
+      - atomic J integral energy release rate
+  - name: 材料与缺陷体系
+    definition: 结论的适用范围：单晶、晶界、氢、短程序、hcp
+    targets:
+      - grain boundary crack fracture toughness
+      - hydrogen embrittlement dislocation emission suppression
+      - short range order effect on fracture toughness
+      - hcp metal crack tip twinning
+outside_axes:
+  - 多尺度耦合（QC/CADD/QM-MM）
+  - 机器学习势与主动学习
+  - 相场断裂
+red_lines_seed:
+  - 机理级结论至少两个独立来源势函数方向一致
+  - 每条结果档案附应变率/温度条件与势函数依赖性
+  - CCT 几何只能作定性
+  - 含氢体系时间步 ≤0.5 fs
