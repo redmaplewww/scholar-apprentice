@@ -323,4 +323,5 @@ cd scripts && python -m unittest -v test_phase_gate
 阶段门（S/T/E/I/R/K 的流程与 I 阶段工具）与 K 阶段归纳流水线均已实现并自测通过；
 `domain-packs/fracture` 是作者真实研究项目演化出来的参考包，数据不在本仓库。
 
-仓库暂未指定开源许可；在明确之前请勿视为可自由再分发。
+本仓库目前未指定开源许可（LICENSE 待定）。在补齐之前，代码与文档的复用、再分发请先联系作者；
+如需直接复用，建议由作者补一个 MIT 或 Apache-2.0 许可。
